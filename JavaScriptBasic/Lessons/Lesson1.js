@@ -7,7 +7,7 @@ var lastName = "Hanh"
 let firstName = "Nguyen"
 
 var date, dateOfBirth, sex
-age = 20
+var age = 20
 sex = "Female"
 console.log(age)
 age = 10
@@ -26,7 +26,7 @@ var numberOfCars = undefined
 //Concatenation and interpolation
 var price = 50
 var itemName = "Cup"
-var messageOfPrint2 = "The price for your" + itemName +  "is" + price + "dollars" //Concatenation
+var messageOfPrint1 = "The price for your" + itemName +  "is" + price + "dollars" //Concatenation
 var messageOfPrint2 = `The price for your ${itemName} is ${price} dollars` //interpolation
 console.log(messageOfPrint1)
 console.log(messageOfPrint2)
@@ -45,7 +45,7 @@ customer['firstName'] = "Tran" //Bracket notation
 console.log(`${customer.firstName} ${customer['firstName']}`)
 
 //Array
-var car = [toyota, honda]
+var car = ["toyota", "honda"]
 console.log(car[0])
 
 //Relational and Equality Operation
@@ -70,7 +70,6 @@ if(condition){
 
 //For oop
 for(statement1; statement2; statement3){
-
 }
 
 var cars = ["Tesla", "Toyota"]
@@ -102,13 +101,28 @@ var arrowFunc = () =>{
     console.log()
 }
 //Function with argument
-function funcExample(name){
+function funcArgument(name){
     console.log(name)
 }
+
 //Function with return
 function funcReturn(number){
     var result = number*2
     return result
 }
+
 //Import function
-import {funcExample} from '/../Lessons/lesson1.js'
+import {printAge} from '../TestImportFunction/ImportFunction.js'
+printAge(age)
+
+//Import function everything
+import * as importEveryThing from '../TestImportFunction/ImportFunction.js'
+importEveryThing.printAge(5)
+
+//Class and method
+import { CustomerDetails } from '../TestImportFunction/ImportFunction.js'
+var CustomerDetails = new CustomerDetails()
+customerDetails.printFirstName("Nguyen")
+
+import { customerInformation } from '../TestImportFunction/ImportFunction.js'
+customerInformation.printName("Hanh")

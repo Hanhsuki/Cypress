@@ -1,0 +1,6 @@
+[submodule "Cypress"]
+	path = Cypress
+	url = https://github.com/Hanhsuki/Cypress.git
+[submodule "ngx-cypress-test"]
+	path = ngx-cypress-test
+	url = https://github.com/bondar-artem/ngx-cypress-test.git
