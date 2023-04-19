@@ -21,6 +21,14 @@ it('invoke command', () =>{
             expect(classValue).to.contain(valueAttributeElement)
         })
 })
+//example datepicker
 it('assert property', () => {
+    cy.contains('tagName2', 'value'),find().then( input =>{
+        cy.wrap(input).click()
+        cy.get('').contains('textDateClick').click()
+        cy.wrap(input).invoke('prop', 'propertiesName').should('contains', 'valueofPropertiesName')  //invoke by properties of element
+        
     
+    
+    })
 })
