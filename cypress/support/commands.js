@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+//Commands là một API cho phép định nghĩa các lệnh tùy chỉnh để sử dụng trong test case
+//Cypress.commands.add để đăng ký lệnh tùy chỉnh của bạn sau đó gọi để sử dụng.
+//Gọi lệnh command trên bằng cách cy.login(user,password)
+//cy.visit('./login') lệnh này để truy cập vào trang login của ứng dụng
+Cypress.commands.add('LoginToApplication', (userName, password) =>{
+    cy.visit('./login')
+})
+
