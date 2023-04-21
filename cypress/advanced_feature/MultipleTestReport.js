@@ -1,0 +1,1 @@
+//Có thể xem hướng dẫn trong phần reporter documentation của cypress
