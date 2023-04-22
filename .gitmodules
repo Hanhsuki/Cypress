@@ -4,3 +4,12 @@
 [submodule "ngx-cypress-test"]
 	path = ngx-cypress-test
 	url = https://github.com/bondar-artem/ngx-cypress-test.git
+[submodule "udemy-realworld-app"]
+	path = udemy-realworld-app
+	url = https://github.com/bondar-artem/udemy-realworld-app.git
+[submodule "angular-realworld-example-app"]
+	path = angular-realworld-example-app
+	url = https://github.com/bondar-artem/angular-realworld-example-app.git
+[submodule "sorry-cypress"]
+	path = sorry-cypress
+	url = https://github.com/sorry-cypress/sorry-cypress.git
